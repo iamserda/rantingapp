@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1f1e1b;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-self: baseline;
+    margin: 0.7em;
+}
+
+#app.container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1e1b;
+    margin: 0;
+    min-height: 88vh;
+}
+
+header {
+    background: #a9fcd9;
+    transform: matrix();
+    padding: 1em 0 2em;
+    margin: 0;
+    /* text-shadow: -1px -1px 1px black; */
+    /* position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999; */
+}
+
+h1 {
+    background: rgba(255, 255, 255, 0.15);
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 80%;
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: "Pacifico", futura, "Nato", "Sans", sans-serif;
+    margin: 0.25em auto;
+    text-shadow: 2px 5px 1px #3ed8ff;
+    text-align: center;
+}
+
+h1::after {
+    transform: translate(120px, 50%);
+}
+
+img {
+    width: 100%;
+    max-width: 100px;
+}
+
+a.photographer {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    transform: scale(1);
+    transition: all 500ms ease;
+}
+
+a.photographer:hover {
+    transform: scale(1.15);
+    font-weight: bolder;
+    color: rgb(44, 44, 44);
+}
+
+#app.container {
+    /* background-color: black; */
+    padding-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
+.post {
+    max-width: 360px;
+    min-width: 200px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.616);
+    background: linear-gradient(#aaffdd, 25%, #3ed8ff);
+    box-shadow: none;
+    transform: scale(0.95);
+    transition: transform 500ms linear, box-shadow 1s linear;
+    /* transition: box-shadow 1000ms ease; */
+}
+
+.post:hover {
+    transform: scale(1.1);
+    /*halo effect */
+    box-shadow: 0 0 30px rgba(255, 230, 2, 0.616);
+    cursor: pointer;
+    z-index: 999;
+    background: linear-gradient(#aaffdd, 95%, #3ed8ff);
+    border: 4px solid #008cff;
+}
+
+.text {
+    font-size: 1rem;
+    width: 95%;
+    color: rgb(255, 255, 255);
+    margin: 1em 2em;
+    background: #72c0ff6e;
+    padding: 2em 1em;
+    box-shadow: -3px 3px 10px rgba(145, 145, 145, 0.548);
+    line-height: 1.25;
+}
+
+
+/* .user-id {
+    color: white;
+    padding: 0.5em;
+} */
+
+
+/* .message-id {
+    padding: 0.5em;
+    font-weight: bold;
+} */
+
+.msgHeader {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.089);
+    padding: 1em 0;
+    width: 95%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    max-height: 100px;
+}
+
+.photo {
+    border: 2px solid #fff;
+    padding: 0.25em;
+    border-radius: 50%;
+    max-width: 25%;
+}
+
+.subtitle {
+    color: white;
+    padding: 0.5em 1em;
+    width: 70%;
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 1.25;
+}
+
+footer {
+    background: linear-gradient(#aaffdd, 25%, #3ed8ff);
+    padding: 1em;
+}
+
+footer>p {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 0.75rem;
+    padding: 0.5em;
+    width: 500px;
+}
+
+footer>p {
+    transition: all 250ms ease-out;
+}
+
+footer>p:hover {
+    font-size: 1rem;
+    color: #008cff;
+}
+
+@media (max-width: 768px) {
+    #app.container {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .post {
+        min-width: 320px;
+        align-self: center;
+        width: 100%;
+        max-width: 500px;
+        background: linear-gradient(#aaffdd, 55%, #3ed8ff);
+    }
+    .subtitle {
+        line-height: 1.5;
+    }
+    .text {
+        padding: 3em;
+    }
+}
+
+@media (max-width: 500px) {
+    .subtitle {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    .text {
+        padding: 1em;
+    }
+}
