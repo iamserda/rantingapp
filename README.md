@@ -1,34 +1,16 @@
-# title(){
-		
-		return this.options.title || this.options.name;
-	}
+# Ranting.app
 
-Quick start:
+## What is it?
 
-```
-$ yarn # npm install
-$ yarn build # npm run build
-````
+Ranting.app is a user interface for a fictional social media feed.
 
-## Development
+## Where is the Link
 
-Run Webpack in watch-mode to continually compile the JavaScript as you work:
+<a href="https://iamserda.github.io/rantingapp/" target="_blank">ranting.app</a>
 
-```
-$ yarn watch # npm run watch
-```
+Questions, concerns, emotional outbursts? Reach out!
 
-## Supporting Scrimba
+- Twitter: <a href="https://twitter.com/iamserda">@iamserda</a>
+- LinkedIn: <a href="https://linkedin.com/in/iamserda" target="_blank">iamserda</a>
 
-Since 2017, we have created over 20 free courses on Scrimba, and we're going to
-continue launching free courses. But to pay our bills, we have to charge once
-in a while. So if you've ever wanted to "give back" to Scrimba, you can do that by buying
-	one of our paid courses
-
-- [Become a professional React developer](https://scrimba.com/course/greact)
-- [The Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive)
-- [The Ultimate JavaScript Bootcamp](https://scrimba.com/course/gjavascript)
-
-	It would also mean the world to us if you share the courses.  
-
-Happy Coding!
+Made with ❤️ in Inwood, NYC. Circa March 2021.

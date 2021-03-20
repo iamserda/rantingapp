@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 * {
     box-sizing: border-box;
 }
 
 html {
     font-size: 16px;
+    min-height: 100vh;
 }
 
 html,
@@ -37,7 +39,7 @@ body {
     align-items: center;
     background: #1f1e1b;
     margin: 0;
-    min-height: 88vh;
+    min-height: 90%;
 }
 
 header {
@@ -74,21 +76,7 @@ img {
     max-width: 100px;
 }
 
-a.photographer {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    font-weight: normal;
-    transform: scale(1);
-    transition: all 500ms ease;
-}
 
-a.photographer:hover {
-    transform: scale(1.15);
-    font-weight: bolder;
-    color: rgb(44, 44, 44);
-}
 
 #app.container {
     /* background-color: black; */
@@ -110,13 +98,13 @@ a.photographer:hover {
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.616);
     background: linear-gradient(#aaffdd, 25%, #3ed8ff);
     box-shadow: none;
-    transform: scale(0.95);
-    transition: transform 500ms linear, box-shadow 1s linear;
+    transform: scale(0.85);
+    transition: transform 250ms linear, box-shadow 1s linear;
     /* transition: box-shadow 1000ms ease; */
 }
 
 .post:hover {
-    transform: scale(1.1);
+    transform: scale(1);
     /*halo effect */
     box-shadow: 0 0 30px rgba(255, 230, 2, 0.616);
     cursor: pointer;
@@ -126,11 +114,11 @@ a.photographer:hover {
 }
 
 .text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 95%;
-    color: rgb(255, 255, 255);
+    color: #008cff;
     margin: 1em 2em;
-    background: #72c0ff6e;
+    background: rgba(255, 255, 255, 0.685);
     padding: 2em 1em;
     box-shadow: -3px 3px 10px rgba(145, 145, 145, 0.548);
     line-height: 1.25;
@@ -175,9 +163,26 @@ a.photographer:hover {
     line-height: 1.25;
 }
 
+a.photographer {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    transform: scale(1);
+    transition: all 500ms ease;
+}
+
+a.photographer:hover {
+    transform: scale(1.15);
+    font-weight: bolder;
+    color: rgb(44, 44, 44);
+}
+
 footer {
     background: linear-gradient(#aaffdd, 25%, #3ed8ff);
     padding: 1em;
+    margin: 2em 0 0;
 }
 
 footer>p {
@@ -206,6 +211,7 @@ footer>p:hover {
         justify-content: center;
         align-items: center;
     }
+
     .post {
         min-width: 320px;
         align-self: center;
@@ -213,9 +219,11 @@ footer>p:hover {
         max-width: 500px;
         background: linear-gradient(#aaffdd, 55%, #3ed8ff);
     }
+
     .subtitle {
         line-height: 1.5;
     }
+
     .text {
         padding: 3em;
     }
@@ -226,6 +234,7 @@ footer>p:hover {
         font-size: 0.85rem;
         line-height: 1.5;
     }
+
     .text {
         padding: 1em;
     }
